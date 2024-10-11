@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html class=" w-mod-ix"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>.wf-force-outline-none[tabindex="-1"]:focus{outline:none;}</style>
+
+    <style>
+        .center {
+            display:block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        ol {
+            list-style-type: upper-roman;
+            list-style-position: inside;
+        }
+    </style>
+
+    <!-- Google tag (gtag.js) -->
+    <script async="" src="./pretrained_model_cl_files/js"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-XB3PR2Y1TQ');
+    </script>
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Do Pre-trained Models Benefit Equally in Continual Learning?</title>
+    <link rel="stylesheet" href="./pretrained_model_cl_files/bootstrap.min.css">
+    <link href="./pretrained_model_cl_files/css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./pretrained_model_cl_files/Highlight-Clean.css">
+    <link rel="stylesheet" href="./pretrained_model_cl_files/styles.css">
+
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="https://dreamfusion3d.github.io/apple-touch-icon.png"> -->
+    <!-- <link rel="icon" type="image/png" sizes="32x32" href="https://dreamfusion3d.github.io/favicon-32x32.png"> -->
+    <!-- <link rel="icon" type="image/png" sizes="16x16" href="https://dreamfusion3d.github.io/favicon-16x16.png"> -->
+    <!-- <link rel="manifest" href="https://dreamfusion3d.github.io/site.webmanifest"> -->
+
+    <meta property="og:site_name" content="Do Pre-trained Models Benefit Equally in Continual Learning?">
+    <meta property="og:type" content="video.other">
+    <meta property="og:title" content="Do Pre-trained Models Benefit Equally in Continual Learning?">
+    <meta property="og:description" content="Do Pre-trained Models Benefit Equally in Continual Learning?, 2023.">
+    <!-- <meta property="og:url" content="https://dreamfusion3d.github.io/"> -->
+    <!-- <meta property="og:image" content="https://dreamfusion3d.github.io/assets/images/dreamfusion_samples.png"> -->
+
+    <!-- <meta property="article:publisher" content="https://dreamfusion3d.github.io/"> -->
+    <!-- <meta name="twitter:card" content="summary_large_image"> -->
+    <!-- <meta name="twitter:title" content="Do Pre-trained Models Benefit Equally in Continual Learning?"> -->
+    <!-- <meta name="twitter:description" content="We combine neural rendering with a multi-modal text-to-2D image diffusion generative model to synthesize diverse 3D objects from text."> -->
+    <!-- <meta name="twitter:url" content="https://dreamfusion3d.github.io/"> -->
+    <!-- <meta name="twitter:image" content="https://dreamfusion3d.github.io/assets/images/dreamfusion_samples.png"> -->
+    <!-- <meta name="twitter:site" content="" /> -->
+
+    <script src="./pretrained_model_cl_files/video_comparison.js"></script>
+    <script type="module" src="./pretrained_model_cl_files/model-viewer.min.js"></script>
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1086.0" data-gr-ext-installed="">
+    <div class="highlight-clean" style="padding-bottom: 10px;">
+        <div class="container" style="max-width: 768px;">
+            <h1 class="text-center">Do Pre-trained Models Benefit Equally in Continual Learning?</h1>
+        </div>
+        <div class="container" style="max-width: 768px;">
+            <div class="row authors">
+                <div class="col-sm-4">
+                    <h5 class="text-center"><a class="text-center" href="https://www.linkedin.com/in/eric-lee-7070a67b/">Kuan-Ying Lee</a></h5>
+                    <h6 class="text-center"><a class="text-center" href="https://illinois.edu/">UIUC</a></h6>
+                </div>
+                <div class="col-sm-4">
+                    <h5 class="text-center"><a class="text-center" href="https://www.linkedin.com/in/yuanyi-zhong/">Yuanyi Zhong</a></h5>
+                    <h6 class="text-center"><a class="text-center" href="https://illinois.edu/">UIUC</a></h6>
+                </div>
+                <div class="col-sm-4">
+                    <h5 class="text-center"><a class="text-center" href="https://yxw.web.illinois.edu/">Yu-Xiong Wang</a></h5>
+                    <h6 class="text-center"><a class="text-center" href="https://illinois.edu/">UIUC</a></h6>
+                </div>
+            </div>    
+        </div>
+        <div class="buttons" style="margin-bottom: 8px;">
+            <a class="btn btn-light" role="button" href="https://arxiv.org/abs/2210.15701">
+                <svg style="width:24px;height:24px;margin-left:-12px;margin-right:12px" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M16 0H8C6.9 0 6 .9 6 2V18C6 19.1 6.9 20 8 20H20C21.1 20 22 19.1 22 18V6L16 0M20 18H8V2H15V7H20V18M4 4V22H20V24H4C2.9 24 2 23.1 2 22V4H4M10 10V12H18V10H10M10 14V16H15V14H10Z"></path>
+                </svg>Paper
+            </a>
+            <a class="btn btn-light" role="button" href="https://kylee5.web.illinois.edu/publication/WACV23/">
+                <svg style="visibility:hidden;width:0px;height:24px;margin-left:-12px;margin-right:12px" width="0px" height="24px" viewBox="0 0 375 531">
+                    <polygon stroke="#000000" points="0.5,0.866 459.5,265.87 0.5,530.874 "></polygon>
+                </svg>Project
+            </a>
+            <a class="btn btn-light" role="button" href="https://github.com/eric11220/pretrained-models-in-CL">
+                <svg style="visibility:hidden;width:0px;height:24px;margin-left:-12px;margin-right:12px" width="0px" height="24px" viewBox="0 0 375 531">
+                    <polygon stroke="#000000" points="0.5,0.866 459.5,265.87 0.5,530.874 "></polygon>
+                </svg>GitHub
+            </a>
+        </div>
+    </div>
+    <hr class="divider">
+    <div class="container" style="max-width: 768px;">
+        <h2><b>Teaser</b></h2>
+        <div>
+            <div class="col-md-12" style="display:inline-block; width:49%">
+                Given performance of two CL algorithms trained from scratch
+            </div>
+            <div class="col-md-12" style="display:inline-block; width:49%">
+                If we initialize them from a ImageNet pre-trained RN18, <b>is it <span style="color:rgb(212,138,134);">(1)</span> or <span tyle="color:rgb(47,111,186);">(2)</span>?</b>
+            </div>
+        </div>
+        <div>
+            <div class="col-md-12" style="display:inline-block; width:49%">
+                <img style="display:inline-block;" width="100%%" src="images/context1.png">
+            </div>
+            <div class="col-md-12" style="display:inline-block; width:49%">
+                <img style="display:inline-block;" width="100%%" src="images/question1.png">
+            </div>
+        </div>
+        <br>
+        <div>
+            <div class="col-md-12" style="display:inline-block; width:49%">
+                Most people would probably go for <span tyle="color:rgb(47,111,186);">(2)</span>... 
+            </div>
+            <div class="col-md-12" style="display:inline-block; width:49%">
+                It’s the other way around!
+            </div>
+        </div>
+        <div>
+            <div class="col-md-12" style="display:inline-block; width:49%">
+                <img style="display:inline-block;" width="100%%" src="images/common1.png">
+            </div>
+            <div class="col-md-12" style="display:inline-block; width:49%">
+                <img style="display:inline-block;" width="100%%" src="images/answer1.png">
+            </div>
+        </div>
+    </div>
+    <hr class="divider">
+    <div class="container" style="max-width: 768px;">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Abstract</h2>
+                <p>
+                    <!-- <strong> -->
+                        Existing work on continual learning (CL) is primarily devoted to developing algorithms for models trained from scratch. Despite their encouraging performance on contrived benchmarks, these algorithms show dramatic performance drops in real-world scenarios. Therefore, this paper advocates the systematic introduction of pre-training to CL, which is a general recipe for transferring knowledge to downstream tasks but is substantially missing in the CL community. Our investigation reveals the multifaceted complexity of exploiting pre-trained models for CL, along three different axes, pre-trained models, CL algorithms, and CL scenarios. Perhaps most intriguingly, improvements in CL algorithms from pre-training are very inconsistent an underperforming algorithm could become competitive and even state-of-the-art when all algorithms start from a pre-trained model. This indicates that the current paradigm, where all CL methods are compared in from-scratch training, is not well reflective of the true CL objective and desired progress. In addition, we make several other important observations, including that CL algorithms that exert less regularization benefit more from a pre-trained model; and that a stronger pre-trained model such as CLIP does not guarantee a better improvement. Based on these findings, we introduce a simple yet effective baseline that employs minimum regularization and leverages the more beneficial pre-trained model, coupled with a two-stage training pipeline. We recommend including this strong baseline in the future development of CL algorithms, due to its demonstrated state-of-the-art performance.
+                    <!-- </strong> -->
+                </p>
+            </div>
+        </div>
+    </div>
+    <hr class="divider">
+    <div class="container" style="max-width: 768px;">
+        <div class="row" style="padding: 0px 15px 0px 15px;">
+            <div>
+                <img src="images/teaser.png" alt="Benefits from pre-trained models vary dramatically depening on different CL methods." style="max-width: 100%;">
+            </div>
+            <!-- <div class="col-md-6 col-sm-6 my-auto" style="float: left;"> -->
+            <h6 class="caption">(a) CL algorithms trained from scratch fail on <span style="color:rgb(226,134,131);"> Split CUB200 </span>, a more complex dataset than <span style="color:rgb(166,235,153);"> Split CIFAR100 </span>, which necessitates the use of pre-trained models (denoted as ‘+ RN18’) that dramatically increase the accuracy of a wide spectrum of algorithms. (b) Different CL algorithms receive vastly different benefits from pre-trained models, and the superiority between algorithms changes. These findings suggest that it is critical for the community to develop CL algorithms with a pre-trained model and understand their behaviors. </h6>
+            <!-- </div> -->
+        </div>
+    </div>
+    <hr class="divider">
+    <div class="container" style="max-width: 768px;">
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="text-center">Investigation of Pre-trained Models from Three Axes</h4>
+            </div>
+            <div>
+                <img class="center" src="images/axes.png" alt="Different models, different CL methods, and different CL scenarios for investigation" style="max-width: 80%;">
+            </div>
+            <div class='col-4'>
+                <a href="#diff_methods" class="btn btn-primary btn-lg btn-search" style="font-size: min(2vw, 16px); padding: 12px 0px 12px 0px;">
+                    Different CL Methods
+                </a>
+            </div>
+            <div class='col-4'>
+                <a href="#diff_models" class="btn btn-primary btn-lg btn-search" style="font-size: min(2vw, 16px); padding: 12px 0px 12px 0px;">
+                    Different Pre-trained Models
+                </a>
+            </div>
+            <div class='col-4'>
+                <a href="#diff_scenarios" class="btn btn-primary btn-lg btn-search" style="font-size: min(2vw, 16px); padding: 12px 0px 12px 0px;">
+                    Different CL Scenarios
+                </a>
+            </div>
+        </div>
+    </div>
+    <hr class="divider">
+    <div class="container" style="max-width: 768px;">
+        <div class="row">
+            <div class="col-md-12">
+                <a id="diff_methods"><h4 class="text-center">Observations from Different CL Methods</h4></a>
+            </div>
+
+            <br><br><div class="row">
+                <ol>
+                    <li>Inconsistency of method superiority between from-scratch training & pre-training
+                    <br><br>
+                    <img class="center" src="images/inconsistency.png" alt="Rankings between CL methods change when a pre-trained model is deployed" style="max-width: 100%;">
+                    <br>
+                    <li>Replay-based methods benefit more from pre-trained models
+                    <br>
+                    <img class="center" src="images/replay_benefits_more.png" alt="Replay-based methods benefit more from a pre-trained model" style="max-width: 75%;">
+                </ol>
+            </div>
+
+        </div>
+    </div>
+    <hr class="divider">
+
+    <div class="container" style="max-width: 768px;">
+        <div class="row">
+            <div class="col-md-12">
+                <a id="diff_models"><h4 class="text-center">Observations from Different Pre-trained Models</h4></a>
+            </div>
+
+            <br><br><div class="row">
+                <ol>
+                    <li>Self-supervised fine-tuning decreases forgetting
+                    <br>
+                    <li>CLIP enjoys less forgetting compared with ImageNet pre-trained ResNet
+                    <br><br>
+                    <img class="center" src="images/forgetting.png" alt="" style="max-width: 60%;">
+
+                    <br>
+
+                    <li>ImageNet ResNet50 outperforms the CLIP counterpart
+                    <br><br>
+                    <img class="center" src="images/clip_vs_imagenet.png" alt="" style="max-width: 60%;">
+                </ol>
+            </div>
+
+        </div>
+    </div>
+    <hr class="divider">
+
+    <div class="container" style="max-width: 768px;">
+        <div class="row">
+            <div class="col-md-12">
+                <a id="diff_scenarios"><h4 class="text-center">Observations from Different CL Scenarios</h4></a>
+            </div>
+
+            <br><br><div class="row">
+                <ol>
+                    <li>Performances in online CIL are better than CIL
+                    <br><br>
+                    <img class="center" src="images/online_cil_better.png" alt="Rankings between CL methods change when a pre-trained model is deployed" style="max-width: 70%;">
+                </ol>
+            </div>
+
+        </div>
+    </div>
+    <hr class="divider">
+
+    <div class="container" style="max-width: 768px;">
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="text-center">Strong ER Baseline with Two-stage Training</h4>
+            </div>
+
+            <br><br><div class="row">
+                <ol>
+                    <li>Fine-tuning the model after streaming offline on samples in ER as the second stage.
+                    <br>
+                    <img class="center" src="images/two_stage.png" alt="" style="max-width: 70%;">
+
+                    <br>
+                    <li>Simple yet strong baseline outperforms best-performing methods.
+                    <br><br>
+                    <img class="center" src="images/strong_baseline.png" alt="" style="max-width: 70%;"> 
+                </ol>
+            </div>
+
+        </div>
+    </div>
+    <hr class="divider">
+
+    <!-- Citation -->
+    <div class="container" style="max-width: 768px;">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Citation</h2>
+                <code>
+                @inproceedings{lee2023pretrained_models_cl,<br>
+                    &nbsp; author = {Lee, Kuan-Ying and Zhong, Yuanyi and Wang, Yu-Xiong},<br>
+                    &nbsp; title  = {Do Pre-trained Models Benefit Equally in Continual Learning?},<br>
+                    &nbsp; booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision},<br>
+                    &nbsp; year   = {2023},<br>
+                }</code>
+            </div>
+        </div>
+    </div>
+
+    <hr class="divider">
+    <div class="container" style="max-width: 768px;">
+        <h6 class="text-center">Acknowledgement -- website template adopted from <a class="text-center" href="https://jonbarron.info/">Jon Barron</a></h6>
+    </div>
+
+    <script src="./pretrained_model_cl_files/polyfill.js"></script>
+    <script src="./pretrained_model_cl_files/yall.js"></script>
+    <script>
+        yall(
+            {
+                observeChanges: true
+            }
+        );
+    </script>
+    <script src="./pretrained_model_cl_files/scripts.js"></script>
+    <script src="./pretrained_model_cl_files/jquery.min.js"></script>
+    <script src="./pretrained_model_cl_files/bootstrap.bundle.min.js"></script>
+    <script src="./pretrained_model_cl_files/webflow.fd002feec.js"></script>
+    <!-- Import the component -->
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
