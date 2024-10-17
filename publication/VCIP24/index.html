@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html class=" w-mod-ix"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>.wf-force-outline-none[tabindex="-1"]:focus{outline:none;}</style>
+
+    <style>
+        .center {
+            display:block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        ol {
+            list-style-type: upper-roman;
+            list-style-position: inside;
+        }
+    </style>
+
+    <!-- Google tag (gtag.js) -->
+    <script async="" src="./page_files/js"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-XB3PR2Y1TQ');
+    </script>
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Pseudo Dataset Generation for Out-of-domain Multi-Camera View Recommendation</title>
+    <link rel="stylesheet" href="./page_files/bootstrap.min.css">
+    <link href="./page_files/css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./page_files/Highlight-Clean.css">
+    <link rel="stylesheet" href="./page_files/styles.css">
+
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="https://dreamfusion3d.github.io/apple-touch-icon.png"> -->
+    <!-- <link rel="icon" type="image/png" sizes="32x32" href="https://dreamfusion3d.github.io/favicon-32x32.png"> -->
+    <!-- <link rel="icon" type="image/png" sizes="16x16" href="https://dreamfusion3d.github.io/favicon-16x16.png"> -->
+    <!-- <link rel="manifest" href="https://dreamfusion3d.github.io/site.webmanifest"> -->
+
+    <meta property="og:site_name" content="Do Pre-trained Models Benefit Equally in Continual Learning?">
+    <meta property="og:type" content="video.other">
+    <meta property="og:title" content="Do Pre-trained Models Benefit Equally in Continual Learning?">
+    <meta property="og:description" content="Do Pre-trained Models Benefit Equally in Continual Learning?, 2023.">
+    <!-- <meta property="og:url" content="https://dreamfusion3d.github.io/"> -->
+    <!-- <meta property="og:image" content="https://dreamfusion3d.github.io/assets/images/dreamfusion_samples.png"> -->
+
+    <!-- <meta property="article:publisher" content="https://dreamfusion3d.github.io/"> -->
+    <!-- <meta name="twitter:card" content="summary_large_image"> -->
+    <!-- <meta name="twitter:title" content="Do Pre-trained Models Benefit Equally in Continual Learning?"> -->
+    <!-- <meta name="twitter:description" content="We combine neural rendering with a multi-modal text-to-2D image diffusion generative model to synthesize diverse 3D objects from text."> -->
+    <!-- <meta name="twitter:url" content="https://dreamfusion3d.github.io/"> -->
+    <!-- <meta name="twitter:image" content="https://dreamfusion3d.github.io/assets/images/dreamfusion_samples.png"> -->
+    <!-- <meta name="twitter:site" content="" /> -->
+
+    <script src="./page_files/video_comparison.js"></script>
+    <script type="module" src="./page_files/model-viewer.min.js"></script>
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1086.0" data-gr-ext-installed="">
+    <div class="highlight-clean" style="padding-bottom: 10px;">
+        <div class="container" style="max-width: 768px;">
+            <h2 class="text-center">Pseudo Dataset Generation for Out-of-domain Multi-Camera View Recommendation</h2>
+        </div>
+        <div class="container" style="max-width: 768px;">
+            <div class="row authors">
+                <div class="col-sm-4">
+                    <h5 class="text-center"><a class="text-center" href="https://www.linkedin.com/in/eric-lee-7070a67b/">Kuan-Ying Lee</a></h5>
+                    <h6 class="text-center"><a class="text-center" href="https://illinois.edu/">UIUC</a></h6>
+                </div>
+                <div class="col-sm-4">
+                    <h5 class="text-center"><a class="text-center" href="https://scholar.google.com/citations?user=jrGRNJUAAAAJ&hl=en">Qian Zhou</a></h5>
+                    <h6 class="text-center"><a class="text-center" href="https://www.cityu.edu.hk/">City University of Hong Kong</a></h6>
+                </div>
+                <div class="col-sm-4">
+                    <h5 class="text-center"><a class="text-center" href="https://siebelschool.illinois.edu/about/people/faculty/klara">Klara Nahrstedt</a></h5>
+                    <h6 class="text-center"><a class="text-center" href="https://illinois.edu/">UIUC</a></h6>
+                </div>
+            </div>    
+        </div>
+        <div class="buttons" style="margin-bottom: 8px;">
+            <a class="btn btn-light" role="button" href="https://arxiv.org/abs/2210.15701">
+                <svg style="width:24px;height:24px;margin-left:-12px;margin-right:12px" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M16 0H8C6.9 0 6 .9 6 2V18C6 19.1 6.9 20 8 20H20C21.1 20 22 19.1 22 18V6L16 0M20 18H8V2H15V7H20V18M4 4V22H20V24H4C2.9 24 2 23.1 2 22V4H4M10 10V12H18V10H10M10 14V16H15V14H10Z"></path>
+                </svg>Paper
+            </a>
+            <a class="btn btn-light" role="button" href="https://eric11220.github.io/publication/VCIP24/">
+                <svg style="visibility:hidden;width:0px;height:24px;margin-left:-12px;margin-right:12px" width="0px" height="24px" viewBox="0 0 375 531">
+                    <polygon stroke="#000000" points="0.5,0.866 459.5,265.87 0.5,530.874 "></polygon>
+                </svg>Project
+            </a>
+            <!--
+            <a class="btn btn-light" role="button" href="https://github.com/eric11220/pretrained-models-in-CL">
+                <svg style="visibility:hidden;width:0px;height:24px;margin-left:-12px;margin-right:12px" width="0px" height="24px" viewBox="0 0 375 531">
+                    <polygon stroke="#000000" points="0.5,0.866 459.5,265.87 0.5,530.874 "></polygon>
+                </svg>GitHub
+            </a>
+            -->
+        </div>
+    </div>
+    <!-- <hr class="divider">
+        <div class="container" style="max-width: 768px;">
+            <h2><b>Teaser</b></h2>
+            <div>
+                <img style="display:inline-block;" width="100%%" src="images/teaser.png">
+            </div>
+        </div>
+    -->
+    <hr class="divider">
+    <div class="container" style="max-width: 768px;">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Abstract</h2>
+                <p>
+                    <!-- <strong> -->
+                    Multi-camera systems are indispensable in movies, TV shows, and other media. Selecting the appropriate camera at every timestamp has a decisive impact on production quality and audience preferences. Learning-based view recommendation frameworks can assist professionals in decision-making. However, they often struggle outside of their training domains. The scarcity of labeled multi-camera view recommendation datasets exacerbates the issue. Based on the insight that many videos are edited from the original multi-camera videos, we propose transforming regular videos into pseudo-labeled multi-camera view recommendation datasets. Promisingly, by training the model on pseudo-labeled datasets stemming from videos in the target domain, we achieve a 68% relative improvement in the model's accuracy in the target domain and bridge the accuracy gap between in-domain and never-before-seen domains.
+                    <!-- </strong> -->
+                </p>
+            </div>
+        </div>
+    </div>
+    <hr class="divider">
+    <div class="container" style="max-width: 768px;">
+        <div class="row" style="padding: 0px 15px 0px 15px;">
+            <div class="col-md-12">
+                <h4 class="text-center">Multi-camera recommendation model suffers out-of-domain.</h4>
+            </div>
+            <br><br>
+            <div>
+                <img src="images/teaser.png" alt="Multi-camera editing model performs poorly out-of-domain." style="max-width: 100%;">
+            </div>
+            <h6 class="caption">
+                a) A multi-camera recommendation model trained on a labeled multi-camera editing dataset of a <span style="color:rgb(79,173,91);"> particular domain </span> generalizes poorly to a <span style="color:rgb(234,51,35);"> never-before-seen domain </span> and the accuracy drops significantly. (b) Our proposed method leverages regular videos to generate <span style="color:rgb(125,193,182);"> pseudo-labeled datasets </span> for the target domain and improve themodel’s accuracy.
+            </h6>
+        </div>
+    </div>
+    <hr class="divider">
+    <div class="container" style="max-width: 768px;">
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="text-center">Lack of labeled multi-camera editing dataset in different domains.</h4>
+            </div>
+            <div>
+                <img class="center" src="images/lack_of_data.png" alt="Few labeled multi-camera editing data" style="max-width: 80%;">
+            </div>
+        </div>
+    </div>
+    <hr class="divider">
+    <div class="container" style="max-width: 768px;">
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="text-center"><strong>Intuition</strong> -- Videos are edited from original multi-camera videos.</h4>
+            </div><br><br>
+            <div>
+                <img class="center" src="images/intuition.png" alt="Pseudo dataset generation intuition" style="max-width: 100%;">
+            </div>
+        </div>
+    </div>
+
+    <hr class="divider">
+    <div class="container" style="max-width: 768px;">
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="text-center">Generate pseudo-labeled data from edited videos!</h4>
+            </div><br><br>
+            <div>
+                <img class="center" src="images/pseudo_dataset.png" alt="Pseudo dataset generation pipeline" style="max-width: 80%;">
+            </div>
+        </div>
+    </div>
+
+    <hr class="divider">
+    <div class="container" style="max-width: 768px;">
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="text-center">Pseudo datasets bridge the domain gap.</h4>
+            </div><br><br>
+            <div>
+                <img class="center" src="images/comp_w_baseline.png" alt="Comparison without pseudo dataset" style="max-width: 100%;">
+                <br>
+            </div>
+            <h6 class="caption">
+                Multiple factors could compound and intensify the domain gap.
+                <span style="font-weight:bold;">(Left)</span> Without any labels and simply leveraging regular videos,
+                the proposed pseudo-labeled dataset outperforms the professional labeled dataset that is on a different domain.
+                <span style="font-weight:bold;">(Right)</span> Training the model on the pseudo dataset created from videos of the same domain (video scene and type) achieves the best performance.
+            </h6>
+        </div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- Citation -->
+    <div class="container" style="max-width: 768px;">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Citation</h2>
+                <code style="font-size: 13px">
+                    @inproceedings{lee2024_multicam_recom,<br>
+                        &nbsp; author = {Lee, Kuan-Ying and Zhou, Qian and Nahrstedt, Klara},<br>
+                        &nbsp; title  = {Pseudo Dataset Generation for Out-of-domain Multi-Camera View Recommendation},<br>
+                        &nbsp; booktitle = {IEEE visual communications and image processing (VCIP)},<br>
+                        &nbsp; year   = {2024},<br>
+                    }
+                </code>
+            </div>
+        </div>
+    </div>
+
+    <hr class="divider">
+    <div class="container" style="max-width: 768px;">
+        <h6 class="text-center">Acknowledgement -- website template adopted from <a class="text-center" href="https://jonbarron.info/">Jon Barron</a></h6>
+    </div>
+
+    <script src="./page_files/polyfill.js"></script>
+    <script src="./page_files/yall.js"></script>
+    <script>
+        yall(
+            {
+                observeChanges: true
+            }
+        );
+    </script>
+    <script src="./page_files/scripts.js"></script>
+    <script src="./page_files/jquery.min.js"></script>
+    <script src="./page_files/bootstrap.bundle.min.js"></script>
+    <script src="./page_files/webflow.fd002feec.js"></script>
+    <!-- Import the component -->
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
